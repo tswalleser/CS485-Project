@@ -64,6 +64,21 @@ nav {
     z-index: 100;
 }
 
+nav .left {
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    top: 0;
+    z-index: 100;
+}
+
 nav .brand {
     font-size: 15px;
     font-weight: 600;
@@ -103,11 +118,11 @@ nav a {
 nav a:hover { background: var(--bg3); color: var(--text); opacity: 1; text-decoration: none; }
 nav a.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-nav > div { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+/*nav > div { margin-left: auto; display: flex; align-items: center; gap: 4px; }*/
 
 /* ── Page layout ──────────────────────────────────────────── */
 .page {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
     animation: fadeUp .25s ease both;
