@@ -8,6 +8,14 @@ async function load_counties(state_element_id, county_element_id) {
         
         county_element.replaceChildren(); //To create new list of values, the children will die
 
+        let new_placeholder = document.createElement('option');
+        new_placeholder.value = "";
+        new_placeholder.setAttribute("disabled", "true");
+        new_placeholder.setAttribute("selected", "true");
+        new_placeholder.setAttribute("hidden", "true");
+        new_placeholder.innerText = "Select County";
+        county_element.append(new_placeholder);
+
         let state = state_element.value;
 
         if (!state) {

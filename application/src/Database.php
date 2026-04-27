@@ -5,10 +5,10 @@ namespace App;
 class Database {
     private static $database = null;
 
-    private static $server = "localhost";
+    private static $server = "127.0.0.1:3306";
     private static $username = "root";
     private static $password = "";
-    private static $dbname = "CS485_Project";
+    private static $dbname = "cs485_project";
 
     private $conn;
 
